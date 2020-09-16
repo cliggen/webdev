@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 .welcome_container {
 
     background-image: url(./assets/header-background.jpg);
@@ -12,7 +13,7 @@ body {
     background-size: cover;
     background-position: center center;
     height: 745px;
-    background-position-y: -195px;
+    background-position-y: -193px;
 }
 
 header {
@@ -24,19 +25,18 @@ header ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 582px;
-    margin: 0 auto;
+    width: 595px;
     padding: 25px 0 0;
+    margin: 0 auto;
 }
 
 .your-life {
     width: 736px;
     margin: 0 auto;
     color: white;
+    padding-left: 6px;
     
 }
-
 
 ul li {
     font-family: 'Roboto', sans-serif;
@@ -44,13 +44,50 @@ ul li {
     line-height: 140%;
     text-align: left;
     opacity: 0.8;
+}
+
+ul li:nth-child(1) {
+    margin-right: 85px;
+}
+
+ul li:nth-child(2) {
+    margin-right: 101px;
+    margin-top: -1px;
 
 }
+
+ul li:nth-child(3) {
+    margin-right: 102px;
+
+}
+
+ul li:nth-child(3):hover {
+cursor: auto;
+}
+
+ul li:nth-child(4) {
+    margin-right: 83px;
+    margin-top: -1px;
+}
+
+ul li:nth-child(5) {
+    margin-top: -1px;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+header li:hover {
+    cursor:pointer;
+}
+
 .your-life {
     margin-top: 135px;
     margin: 0 auto;
     
 }
+
 .your-life h1 {
 
     font-family: 'Roboto', sans-serif; 
@@ -61,6 +98,7 @@ ul li {
     margin-top: 135px;
     padding-right: 2px;
 }
+
 .your-life h3 {
     font-family: 'Roboto', sans-serif; 
     font-size: 18px;
@@ -69,38 +107,58 @@ ul li {
     font-weight: 300;
     width: 500px;
     margin: 0 auto;
-    padding-right: 2px;
+    padding-right: 5px;
     margin-bottom: 30px;
 }
 
 .button {
-width: 184px;
+width: 180px;
 height: 46px;
 background: #00AFDB;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
-line-height: 46px;
+line-height: 47px;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
-margin: 0 auto;
 }
 
+.your-life .button {
+    margin-left: 272px;
+}
+
+.button:hover {
+    background: #0089ac;
+}
 
 .soc {
     display: flex;
     flex-direction: row;
     width: 170px;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 183px;
+    margin-left: 280px;
+    margin-top: 182px;
+    
 }
+@keyframes rotatesoc {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.soc img:hover {
+        animation: 1s linear 0s normal none infinite running rotatesoc;
+      }
 
 .rappresent {
     height: 842px;
 }
+
 .rappresent h2, .implement__wrapper__slogan h2, .download h2 {
     text-transform: uppercase;
     font-family: Roboto;
@@ -115,29 +173,43 @@ font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 140%;
+line-height: 143%;
+margin-top: 21px;
+margin-bottom: 31px;
 }
 
 .rappresent__wrapper {
     width: 1062px;
     height: 583px;
-    margin: 0 auto;
-    padding-top: 120px;
+    margin-left: 268px;
+    padding-top: 119px;
 }
-.rappresent__wrapper img {
+
+.rappresent__wrapper .engi-image {
     width: 407px;
     height: 582px;
     float: right;
+    background-image: url(./assets/engineers-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -15px;
 }
+
 .rappresent__slogans_container {
-    padding-top: 175px;
-    width: 407px;
+    padding-top: 153px;
+    width: 403px;
     height: 233px;
     float: left;
 }
 
+.rappresent__slogans_container h2{
+    width: 390px;
+}
+
 .ourcommunity {
     height: 504px;
+    background: #F5F6F7;
+    overflow:hidden;
 }
 
 .ourcommunity_wrapper {
@@ -146,11 +218,12 @@ line-height: 140%;
 }
 
 .ourcommunity_wrapper__slogan {
-    padding-top: 35px;
+    padding-top: 154px;
     width: 298px;
 }
+
 .ourcommunity_wrapper__slogan img {
-    padding-left: 100px;
+    padding-left: 127px;
 }
 
 .ourcommunity h3 {
@@ -163,38 +236,70 @@ letter-spacing: 2.4px;
 text-transform: uppercase;
 color: #373737;
 text-align: center;
+margin-bottom: -10px;
 }
+
 .ourcommunity h5 {
     text-align: center;
 }
+
 .ourcommunity_wrapper__slider {
     position: absolute;
     height: 244px;
     left: 706px;
-    top: 118px;
+    top: 119px;
     white-space: nowrap;
 
+
 }
+
 .ourcommunity_wrapper__slider img {
     width: 407px;
     height: 244px;
     display: inline-block;
+    margin-right: 25px;
 }
+
 .switcher {
+    position: absolute;
     width: 79px;
-    padding-left: 555px;
+    top: -42px;
+    left: 545px;
 }
+
 .switcher img {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 15px;
+    margin-right: 0;
 }
+
+.switcher img:hover {
+cursor: pointer;
+}
+
+.arrow-prev {
+    padding-right: 7px;
+}
+.arrow-next {
+    padding-left: 10px;
+}
+span {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 140%;
+}
+
 .implement {
     padding-bottom: 135px;
 }
+
 .implement__wrapper {
     padding-left: 269px;
     padding-top: 120px;
 }
+
 .implement__wrapper img {
     height: 582px;
     width: 407px;
@@ -204,29 +309,35 @@ text-align: center;
     width: 407px;
     height: 184px;
     float: right;
-    padding-top: 199px;
+    padding-top: 177px;
     padding-right: 378px;
 }
+
 .implement__wrapper__slogan .button{
     display: inline-block;
 }
 
 .subscribe {
     height: 598px;
-    margin-bottom: 68px;
-    background-image: url(./assets/bottom-background.jpg);
+    margin-bottom: 119px;
+    background:
+    linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    url(./assets/bottom-background.jpg);
     background-position-y: -616px;
     background-position-x: -158px;
     background-repeat: no-repeat;
-
 }
 
 .subscribe_container {
     width: 406px;
     height: 104px;
-    margin: 0 auto;
-    padding-top: 330px;
+    margin-left: 610px;
+    padding-top: 197px;
 }
+
 .subscribe h2 {
 font-family: Roboto;
 font-style: normal;
@@ -238,13 +349,24 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.download {
-    height: 400px;
+.subscribe input {
+    width: 340px;
+    height: 46px;
 }
+.subscribe button {
+    width: 50px;
+    height: 50px;
+    background: #00AFDB;
+}
+.download {
+    height: 333px;
+}
+
 .download_container {
     width: 483px;
     margin: 0 auto;
 }
+
 .download_container h2{
  text-align: center;
 }
@@ -257,8 +379,11 @@ font-size: 14px;
 line-height: 140%;
 align-items: center;
 text-align: center;
-
 color: #4E4E4E;
+}
+.buttons-download {
+display: flex;
+justify-content: space-evenly;
 }
 
 footer {
