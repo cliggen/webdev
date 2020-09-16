@@ -1,10 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-}
-/*blocks*/
-.upper-container {
     max-width: 1600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.welcome_container {
+
     background-image: url(./assets/header-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +20,7 @@ header {
     color: white;
 }
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -35,7 +37,7 @@ ul {
     
 }
 
-/*text*/
+
 ul li {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -68,6 +70,7 @@ ul li {
     width: 500px;
     margin: 0 auto;
     padding-right: 2px;
+    margin-bottom: 30px;
 }
 
 .button {
@@ -83,7 +86,6 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 margin: 0 auto;
-margin-top: 30px;
 }
 
 
@@ -94,4 +96,173 @@ margin-top: 30px;
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 183px;
+}
+
+.rappresent {
+    height: 842px;
+}
+.rappresent h2, .implement__wrapper__slogan h2, .download h2 {
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;;
+}
+
+h5 {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+}
+
+.rappresent__wrapper {
+    width: 1062px;
+    height: 583px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+.rappresent__wrapper img {
+    width: 407px;
+    height: 582px;
+    float: right;
+}
+.rappresent__slogans_container {
+    padding-top: 175px;
+    width: 407px;
+    height: 233px;
+    float: left;
+}
+
+.ourcommunity {
+    height: 504px;
+}
+
+.ourcommunity_wrapper {
+    padding-left: 269px;
+    position: relative;
+}
+
+.ourcommunity_wrapper__slogan {
+    padding-top: 35px;
+    width: 298px;
+}
+.ourcommunity_wrapper__slogan img {
+    padding-left: 100px;
+}
+
+.ourcommunity h3 {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 125%;
+letter-spacing: 2.4px;
+text-transform: uppercase;
+color: #373737;
+text-align: center;
+}
+.ourcommunity h5 {
+    text-align: center;
+}
+.ourcommunity_wrapper__slider {
+    position: absolute;
+    height: 244px;
+    left: 706px;
+    top: 118px;
+    white-space: nowrap;
+
+}
+.ourcommunity_wrapper__slider img {
+    width: 407px;
+    height: 244px;
+    display: inline-block;
+}
+.switcher {
+    width: 79px;
+    padding-left: 555px;
+}
+.switcher img {
+    width: 8px;
+    height: 8px;
+}
+.implement {
+    padding-bottom: 135px;
+}
+.implement__wrapper {
+    padding-left: 269px;
+    padding-top: 120px;
+}
+.implement__wrapper img {
+    height: 582px;
+    width: 407px;
+}
+
+.implement__wrapper__slogan {
+    width: 407px;
+    height: 184px;
+    float: right;
+    padding-top: 199px;
+    padding-right: 378px;
+}
+.implement__wrapper__slogan .button{
+    display: inline-block;
+}
+
+.subscribe {
+    height: 598px;
+    margin-bottom: 68px;
+    background-image: url(./assets/bottom-background.jpg);
+    background-position-y: -616px;
+    background-position-x: -158px;
+    background-repeat: no-repeat;
+
+}
+
+.subscribe_container {
+    width: 406px;
+    height: 104px;
+    margin: 0 auto;
+    padding-top: 330px;
+}
+.subscribe h2 {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.download {
+    height: 400px;
+}
+.download_container {
+    width: 483px;
+    margin: 0 auto;
+}
+.download_container h2{
+ text-align: center;
+}
+
+.download_container h5 {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+align-items: center;
+text-align: center;
+
+color: #4E4E4E;
+}
+
+footer {
+    background: #000000;
+    height: 184px;
+    color: white;
 }
