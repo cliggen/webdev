@@ -1,5 +1,97 @@
 body {
-    max-width: 1600px;
     margin: 0;
     padding: 0;
+}
+/*blocks*/
+.upper-container {
+    max-width: 1600px;
+    background-image: url(./assets/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 745px;
+    background-position-y: -195px;
+}
+
+header {
+    height: 95px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 582px;
+    margin: 0 auto;
+    padding: 25px 0 0;
+}
+
+.your-life {
+    width: 736px;
+    margin: 0 auto;
+    color: white;
+    
+}
+
+/*text*/
+ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: left;
+    opacity: 0.8;
+
+}
+.your-life {
+    margin-top: 135px;
+    margin: 0 auto;
+    
+}
+.your-life h1 {
+
+    font-family: 'Roboto', sans-serif; 
+    font-size: 64px;
+    letter-spacing: 4.5px;
+    line-height: 75px;  
+    margin-bottom: 22px;
+    margin-top: 135px;
+    padding-right: 2px;
+}
+.your-life h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    font-weight: 300;
+    width: 500px;
+    margin: 0 auto;
+    padding-right: 2px;
+}
+
+.button {
+width: 184px;
+height: 46px;
+background: #00AFDB;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 46px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+margin: 0 auto;
+margin-top: 30px;
+}
+
+
+.soc {
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 183px;
 }
