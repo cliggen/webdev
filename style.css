@@ -1,15 +1,16 @@
 * {
-  max-width: 1600px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  width: 1600px;
-  color: white;
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 .commonbuttonstyle {
   background: #00afdb;
@@ -38,14 +39,13 @@ h5 {
   line-height: 143%;
 }
 header {
-  height: 95px;
+  height: 94px;
   background-color: black;
 }
 
 .header__nav__ul {
-  padding-top: 23px;
-  margin-left: 30px;
-  width: 625px;
+  height: 95px;
+  width: 582px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -54,6 +54,12 @@ header {
 }
 .header__nav__ul li {
   text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 0.8;
 }
 
 .your-life {
@@ -90,9 +96,8 @@ header {
   margin-top: 28px;
 }
 
-.your-life button:hover {
-  border: 2px solid white;
-  border-radius: 3px;
+button:hover {
+  background: #028daf;
 }
 
 .your-life__social {
@@ -140,12 +145,12 @@ header {
   width: 407px;
 }
 .rappresent__container h5 {
-  margin: 20px 0 8px;
+  margin: 21px 0 8px;
 }
 .rappresent button {
   width: 184px;
   height: 47px;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .ourcommunity {
@@ -201,8 +206,22 @@ header {
 }
 
 .ourcommunity__container__gallery__switcher {
-  padding-left: 536px;
-  padding-bottom: 20px;
+  padding-left: 530px;
+  padding-bottom: 19px;
+  font-size: 18px;
+}
+.ourcommunity__container__gallery__switcher button {
+  width: 14px;
+  margin-right: 8px;
+  margin-left: 10px;
+  border: none;
+}
+.ourcommunity__container__gallery__switcher button:hover {
+  background: white;
+}
+.ourcommunity__container__gallery__switcher button img {
+  width: 10px;
+  height: 15px;
 }
 
 .implement {
@@ -237,7 +256,6 @@ header {
 
 .subscribe {
   height: 598px;
-  margin-bottom: 119px;
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
     url(./assets/bottom-background.jpg);
   background-position-y: -616px;
@@ -248,7 +266,7 @@ header {
 .subscribe__container {
   padding-top: 216px;
   margin-left: 596px;
-  width: 406px;
+  width: 408px;
   height: 104px;
 }
 .subscribe__container h2 {
@@ -257,51 +275,81 @@ header {
 }
 
 .subscribe__container_input {
-  width: 313px;
-
+  width: 341px;
   padding-left: 23px;
-  height: 40px;
+  height: 46px;
   font-size: 14px;
-  margin-right: -5px;
+  border: none;
 }
 
 .subscribe__container button {
-  padding: 12px 24px;
-  margin-left: 0px;
+  margin-left: -4px;
+  padding: 14px 23px 14px 25px;
 }
 
 .download {
-  height: 468px;
+  height: 469px;
   color: black;
+  background: #f5f6f7;
 }
 
 .download__container {
+  padding-top: 120px;
   width: 483px;
   margin: 0 auto;
   text-align: center;
 }
 .download__container h2 {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
+}
+.download__container__buttonswrapper {
+  padding-top: 29px;
 }
 .download__container button {
   width: 188px;
   height: 50px;
-  line-height: 370%;
-  margin-top: 30px;
-  margin-right: 12px;
-  margin-left: 12px;
-
+  margin-right: 13px;
+  margin-left: 13px;
+  line-height: 380%;
 }
-.download__container button img {
-background: #009CC2;
-float: right;
-padding-top: 15px;
-padding-bottom: 15px;
-padding-right: 30px;
-padding-left: 10px;
+.download__container__buttonswrapper img {
+  background: #009cc2;
+  float: right;
+  padding: 13px 20px;
+}
+.download__container__buttonswrapper button:nth-child(1) img {
+  padding: 15px 21px 14px 22px;
 }
 
 footer {
-    height: 184px;
-    background-color: #000000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.98;
+  height: 184px;
+  background-color: #000000;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  justify-content: space-between;
+}
+.footer__container {
+  padding-right: 30px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__container h5 {
+  color: #818181;
+  margin-right: -63px;
+  margin-top: 3px;
 }
